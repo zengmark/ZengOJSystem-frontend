@@ -50,6 +50,7 @@ const store = useStore();
  */
 const handleSubmit = async () => {
   const res = await UserControllerService.userLoginUsingPost(form);
+  console.log("djifsjdoifjiosdjofisdoijfoisjdoif" + res);
   // 登录成功，跳转到主页
   if (res.code === 0) {
     await store.dispatch("user/getLoginUser");
